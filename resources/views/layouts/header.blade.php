@@ -38,10 +38,8 @@
                     <li class="dropdown scrollToLink">
                         <a href="#about">About</a>
                         <ul>
-
                             <li class="scrollToLink "><a href="#mission">Mission</a></li>
                             <li class="scrollToLink"><a href="#vision">Vision</a></li>
-
                         </ul>
                     </li>
                     <li class="scrollToLink"><a href="#services">Services</a></li>   

@@ -2,14 +2,12 @@
     <div class="main-footer__bg" style="background-image: url(assets/images/shapes/footer-bg-1.png);"></div>
     <div class="container">
         <div class="row">
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-        <a href="#home" class="main-footer__logo d-flex flex-row align-items-center">
-                <img src="{{asset('assets/logo/'.app('contact')->logo)}}" alt="{{app('contact')->alt_logo }}" width="150">
-                <h2 class="logo-title">{{app('contact')->title_header }}</h2>
-            </a><!-- /.footer-logo -->
-</div>
-           
-
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                <a href="#home" class="main-footer__logo d-flex flex-row align-items-center">
+                    <img src="{{asset('assets/logo/'.app('contact')->logo)}}" alt="{{app('contact')->alt_logo }}" width="150">
+                    <h2 class="logo-title">{{app('contact')->title_header }}</h2>
+                </a><!-- /.footer-logo -->
+            </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                 <div class="main-footer__about">
                     <ul class="main-footer__about__info">
@@ -32,11 +30,11 @@
                 </div><!-- /.footer-menu -->
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-            <p class="main-footer__about__text" style="width:200px">{{app('contact')->address }}</p>
-            <div class="main-footer__social">
-            <a href="{{app('contact')->linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="{{app('contact')->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div><!-- /.footer-social -->
+                <p class="main-footer__about__text" style="width:200px">{{app('contact')->address }}</p>
+                <div class="main-footer__social">
+                    <a href="{{app('contact')->linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="{{app('contact')->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div><!-- /.footer-social -->
             </div>
            
         </div><!-- /.row -->

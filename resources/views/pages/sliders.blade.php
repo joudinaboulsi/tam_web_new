@@ -38,6 +38,5 @@
         </div><!-- slider item end -->
         @endforeach
       
-       
     </div>
 </section>

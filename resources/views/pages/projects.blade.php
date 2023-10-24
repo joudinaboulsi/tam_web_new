@@ -35,14 +35,7 @@
                         </div><!-- folio-item -->
                     </div><!-- slider-item-end -->
                 @endif
-                @endforeach
-
-                <div class="portfolio-one__item">
-                    <div class="portfolio-one__thumb">
-                        <img src="/assets/images/projects/portfolio-img14.jpg" alt="project14">
-                    </div>
-                </div><!-- folio-item -->
+            @endforeach
         </div><!-- slider-item-end -->
     </div><!-- slider-end -->
-    </div>
 </section>

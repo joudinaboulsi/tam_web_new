@@ -21,16 +21,17 @@
                     </div>
 
                     <div class="pb-4 col-md-6">
-                        <label for="alt_image" class="form-label" style="margin-top:103px">Alt Image</label>
+                        <label for="alt_image" class="form-label" @if($project->image) style="margin-top:100px" @endif>Alt Image</label>
                         <input type="text" class="form-control" id="alt_image" name="alt_image" value="{{ $project->alt_image }}" />
                     </div>
                 </div>
 
                 <div class="pb-4">
                     @if ($project->video)
-                    <video width="320" height="240" controls>
-                        <source src="../assets/project/{{ $project->video}}" type="video/mp4"></video>
-                  @endif
+                        <video width="320" height="240" controls class="d-block">
+                            <source src="../assets/project/{{ $project->video}}" type="video/mp4">
+                        </video>
+                    @endif
                     <label for="video" class="form-label">Video</label>
                     <input type="file" class="form-control" id="video" name="video" />
                 </div>

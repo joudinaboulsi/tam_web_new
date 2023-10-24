@@ -21,7 +21,7 @@
                     </div>
 
                     <div class="pb-4 col-md-6">
-                        <label for="alt_image" class="form-label" style="margin-top:103px">Alt Image</label>
+                        <label for="alt_image" class="form-label" style="margin-top:100px">Alt Image</label>
                         <input type="text" class="form-control" id="alt_image" name="alt_image" value="{{ $product->alt_image }}" />
                     </div>
                 </div>

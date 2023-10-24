@@ -33,8 +33,6 @@
                                       <img src="{{ asset('assets/slider/'.$slider->image_slider) }}" height="100" alt="Image Thumbnail">
                                   @endif
                               </td>
-                              
-                        
                               <td>
                                   <div class="d-flex">
                                       <a href="{{ route('sliderEdit', $slider->id) }}" class="btn btn-outline-success me-2">Edit</a>
@@ -52,7 +50,5 @@
           </div>
       </div>
   </div>
-
-
 
 @endsection

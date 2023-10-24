@@ -12,83 +12,58 @@
                             @csrf
 
                             <div class="row">
-                                <div class="pt-3 pb-3 col-6">
+                                <div class="pb-4 col-6">
+                                    @if ($about->image1)
+                                        <img src="{{ asset('assets/about/' . $about->image1) }}" height="100" class="d-block">
+                                    @endif
                                     <label for="image1" class="form-label">Image1</label>
                                     <input type="file" class="form-control" id="image1" name="image1" />
 
                                 </div>
-                                <div class="pt-3 pb-3 col-6">
-                                    <label for="alt_image1" class="form-label">Alt Image1</label>
-                                    <input type="text" class="form-control" id="alt_image1" name="alt_image1"
-                                        value="{{ $about->alt_image1 }}" />
+                                <div class="pb-4 col-6">
+                                    <label for="alt_image1" class="form-label" style="margin-top:100px">Alt Image1</label>
+                                    <input type="text" class="form-control" id="alt_image1" name="alt_image1" value="{{ $about->alt_image1 }}" />
                                 </div>
 
-                                <div class="pt-3 pb-3">
-                                    @if ($about->image1)
-                                        <img src="{{ asset('assets/about/' . $about->image1) }}" width="100">
+                                <div class="pb-4 col-6">
+                                    @if ($about->image2)
+                                        <img src="{{ asset('assets/about/' . $about->image2) }}" height="100" class="d-block">
                                     @endif
-                                </div>
-                            </div>
-                            <div class="row">
-
-                                <div class="pt-3 pb-3 col-6">
                                     <label for="image2" class="form-label">Image 2</label>
                                     <input type="file" class="form-control" id="image2" name="image2" />
-
                                 </div>
-                                <div class="pt-3 pb-3 col-6">
-                                    <label for="alt_image1" class="form-label">Alt Image 2</label>
-                                    <input type="text" class="form-control" id="alt_image2" name="alt_image2"
-                                        value="{{ $about->alt_image2 }}" />
-
+                                <div class="pb-4 col-6">
+                                    <label for="alt_image1" class="form-label" style="margin-top:100px">Alt Image 2</label>
+                                    <input type="text" class="form-control" id="alt_image2" name="alt_image2" value="{{ $about->alt_image2 }}" />
                                 </div>
 
-                                <div class="pt-3 pb-3">
-                                    @if ($about->image2)
-                                        <img src="{{ asset('assets/about/' . $about->image2) }}" width="100">
-                                    @endif
-
+                                <div class="pb-4 col-6">
+                                    <label for="subtitle" class="form-label">Subtitle</label>
+                                    <input type="text" class="form-control" id="subtitle" name="subtitle" value="{{ $about->subtitle }}" />
                                 </div>
-                            </div>
-
-                            <div class="pt-3 pb-3">
-                                <label for="subtitle" class="form-label">Subtitle</label>
-                                <input type="text" class="form-control" id="subtitle" name="subtitle"
-                                    value="{{ $about->subtitle }}" />
-
-                            </div>
-                            <div class="pt-3 pb-3">
-                                <label for="title" class="form-label">Title</label>
-                                <input type="text" class="form-control" id="title" name="title"
-                                    value="{{ $about->title }}" />
-
-                            </div>
-
-                            <div class="pt-3 pb-3">
-                                <label for="text" class="form-label">Content</label>
-                                <textarea class="form-control" id="text" name="text">{!! $about->text !!}</textarea>
-
-                            </div>
-                            <div class="row">
-
-                                <div class="pt-3 pb-3 col-6">
-                                    <label for="pdf" class="form-label">Pdf</label>
-                                    <input type="file" class="form-control" id="pdf" name="pdf" />
+                                <div class="pb-4 col-6">
+                                    <label for="title" class="form-label">Title</label>
+                                    <input type="text" class="form-control" id="title" name="title" value="{{ $about->title }}" />
                                 </div>
 
-                                <div class="pt-3 pb-3">
+                                <div class="pb-4 col-12">
+                                    <label for="text" class="form-label">Content</label>
+                                    <textarea class="form-control" id="text" name="text">{!! $about->text !!}</textarea>
+                                </div>
+
+                                <div class="pb-4 col-12">
+                                    <label for="pdf" class="form-label">Brochure</label>
                                     @if ($about->pdf)
                                         <p><a href="{{ asset('assets/about/' . $about->pdf) }}">Open a PDF file </a>.</p>
                                     @endif
+                                    <input type="file" class="form-control" id="pdf" name="pdf" />
                                 </div>
-                            </div>
-                            <div class="pt-3 pb-3">
-                                <label for="btn_text" class="form-label">Text Button</label>
-                                <input type="text" class="form-control" id="btn_text" name="btn_text"
-                                    value="{{ $about->btn_text }}" />
-                            </div>
 
-                            <div class="demo-inline-spacing">
+                                <div class="pb-4 col-12">
+                                    <label for="btn_text" class="form-label">Text Button</label>
+                                    <input type="text" class="form-control" id="btn_text" name="btn_text" value="{{ $about->btn_text }}" />
+                                </div>
+
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </form>

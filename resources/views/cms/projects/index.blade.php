@@ -51,7 +51,8 @@
                                 <td>
                                     @if ($project->video)
                                     <video width="220" height="240" controls>
-                                        <source src="../assets/project/{{ $project->video}}" type="video/mp4"></video>
+                                        <source src="../assets/project/{{ $project->video}}" type="video/mp4">
+                                    </video>
                                     @endif
                                 </td>
                                 <td>

@@ -19,13 +19,8 @@
                         <input type="file" class="form-control" id="logo" name="logo">
                     </div>
 
-                    
-                </div>
-
-                <div class="row">
-
                     <div class="pb-4 col-md-6">
-                        <label for="alt_logo" class="form-label">Alt Logo Header</label>
+                        <label for="alt_logo" class="form-label" style="margin-top:100px">Alt Logo Header</label>
                         <input type="text" class="form-control" id="alt_logo" name="alt_logo" value="{{ $settings->alt_logo }}">
                     </div>
                     <div class="pb-4 col-md-6">

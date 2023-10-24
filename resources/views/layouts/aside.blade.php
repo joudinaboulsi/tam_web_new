@@ -20,7 +20,7 @@
         </li>
 
         <!-- Home Pages -->
-        <li class="menu-item {{ Route::currentRouteName() == 'sliderCms' ? 'active' : '' }}">
+        <li class="menu-item {{ Route::currentRouteName() == 'sliderCms' || Route::currentRouteName() == 'sliderCreate' || Route::currentRouteName() == 'sliderEdit' ? 'active' : '' }}">
             <a href="{{ route('sliderCms') }}" class="menu-link">
               <i class='bx bxs-dock-top me-2'></i>
                 <div data-i18n="Sliders">Sliders</div>
@@ -28,8 +28,7 @@
         </li>
 
         <!-- About -->
-        <li
-            class="menu-item {{ Route::currentRouteName() == 'aboutCms' || Route::currentRouteName() == 'missionCms' || Route::currentRouteName() == 'visionCms' ? 'active' : '' }}">
+        <li class="menu-item {{ Route::currentRouteName() == 'aboutCms' || Route::currentRouteName() == 'missionCms' || Route::currentRouteName() == 'visionCms' ? 'active' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class='bx bxs-dock-top me-2'></i>
                 <div data-i18n="About">About</div>
@@ -63,21 +62,23 @@
         </li>
 
         <!-- Product Pages -->
-        <li class="menu-item {{ Route::currentRouteName() == 'productCms' ? 'active' : '' }}">
+        <li class="menu-item {{ Route::currentRouteName() == 'productCms' || Route::currentRouteName() == 'productCreate' || Route::currentRouteName() == 'productEdit' ? 'active' : '' }}">
             <a href="{{ route('productCms') }}" class="menu-link">
                 <i class='bx bxs-dock-top me-2'></i>
                 <div data-i18n="Products Page">Products Page</div>
             </a>
         </li>
+
         <!-- Projects Pages -->
-        <li class="menu-item {{ Route::currentRouteName() == 'projectCms' ? 'active' : '' }}">
+        <li class="menu-item {{ Route::currentRouteName() == 'projectCms' || Route::currentRouteName() == 'projectCreate' || Route::currentRouteName() == 'projectEdit' ? 'active' : '' }}">
             <a href="{{ route('projectCms') }}" class="menu-link">
                 <i class='bx bxs-dock-top me-2'></i>
                 <div data-i18n="Projects Page">Projects Page</div>
             </a>
         </li>
+
         <!-- Clients Pages -->
-        <li class="menu-item {{ Route::currentRouteName() == 'clientCms' ? 'active' : '' }}">
+        <li class="menu-item {{ Route::currentRouteName() == 'clientCms' || Route::currentRouteName() == 'clientCreate' || Route::currentRouteName() == 'clientEdit' ? 'active' : '' }}">
             <a href="{{ route('clientCms') }}" class="menu-link">
                 <i class='bx bxs-dock-top me-2'></i>
                 <div data-i18n="Clients Page">Clients Page</div>
@@ -85,14 +86,12 @@
         </li>
 
         <!-- Contact -->
-        <li
-            class="menu-item {{ Route::currentRouteName() == 'contactCms' || Route::currentRouteName() == 'optionContactCreate' || Route::currentRouteName() == 'optionContactEdit' ? 'active' : '' }}">
+        <li class="menu-item {{ Route::currentRouteName() == 'contactCms' ? 'active' : '' }}">
             <a href="{{ route('contactCms') }}" class="menu-link">
                 <i class='bx bxs-dock-top me-2'></i>
                 <div data-i18n="Contact">Contact</div>
             </a>
         </li>
-
 
         <!-- Components -->
         <li class="menu-header small text-uppercase">
@@ -108,12 +107,12 @@
         </li>
 
         <!-- SEO -->
-         <li class="menu-item {{ Route::currentRouteName() == 'seoCms' ? 'active' : '' }}">
-          <a href="{{ route('seoCms') }}" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-layout"></i>
-              <div data-i18n="Seo">Seo</div>
-          </a>
-      </li> 
+        <li class="menu-item {{ Route::currentRouteName() == 'seoCms' ? 'active' : '' }}">
+            <a href="{{ route('seoCms') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <div data-i18n="Seo">Seo</div>
+            </a>
+        </li> 
 
         <!-- Logout -->
         <li class="menu-item">

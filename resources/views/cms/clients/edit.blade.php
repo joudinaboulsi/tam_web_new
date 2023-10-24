@@ -10,7 +10,6 @@
             <form action="{{ route('clientUpdate', $client->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
-              
                 <div class="row">
                     <div class="pb-4 col-md-6">
                         @if ($client->image)
@@ -21,20 +20,21 @@
                     </div>
 
                     <div class="pb-4 col-md-6">
-                        <label for="alt_image" class="form-label" style="margin-top:103px">Alt Image</label>
+                        <label for="alt_image" class="form-label" style="margin-top:100px">Alt Image</label>
                         <input type="text" class="form-control" id="alt_image" name="alt_image" value="{{ $client->alt_image }}" />
                     </div>
                 </div>
-                <div class="pt-3 pb-3">
+                
+                <div class="pb-4">
                     <label for="client" class="form-label">Client</label>
                     <input type="text" class="form-control" id="client" name="client" value="{{$client->client}}"/>
-
                 </div>
-                <div class="pt-3 pb-3">
+
+                <div class="pb-4">
                     <label for="website" class="form-label">Website</label>
                     <input type="text" class="form-control" id="website" name="website" value="{{$client->website}}"/>
-
                 </div>
+
                 <button type="submit" class="btn btn-primary">Save</button>
             </form>
         </div>

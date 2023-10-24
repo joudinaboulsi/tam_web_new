@@ -21,15 +21,13 @@
                         <input type="text" class="form-control" id="alt_image" name="alt_image" />
                     </div>
                 </div>
-                <div class="pt-3 pb-3">
+                <div class="pb-4">
                     <label for="client" class="form-label">Client</label>
                     <input type="text" class="form-control" id="client" name="client"/>
-
                 </div>
-                <div class="pt-3 pb-3">
+                <div class="pb-4">
                     <label for="website" class="form-label">Website</label>
                     <input type="text" class="form-control" id="website" name="website"/>
-
                 </div>
                 <button type="submit" class="btn btn-primary">Save</button>
             </form>
