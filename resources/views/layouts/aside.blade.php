@@ -85,8 +85,16 @@
             </a>
         </li>
 
-        <!-- Contact -->
-        <li class="menu-item {{ Route::currentRouteName() == 'contactCms' ? 'active' : '' }}">
+        <!-- Testimonial -->
+        <li class="menu-item {{ Route::currentRouteName() == 'testimonialCms' ? 'active' : '' }}">
+            <a href="{{ route('testimonialCms') }}" class="menu-link">
+                <i class='bx bxs-dock-top me-2'></i>
+                <div data-i18n="Testimonials">Testimonials</div>
+            </a>
+        </li>
+
+         <!-- Contact -->
+         <li class="menu-item {{ Route::currentRouteName() == 'contactCms' ? 'active' : '' }}">
             <a href="{{ route('contactCms') }}" class="menu-link">
                 <i class='bx bxs-dock-top me-2'></i>
                 <div data-i18n="Contact">Contact</div>

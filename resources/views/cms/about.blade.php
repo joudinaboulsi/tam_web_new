@@ -54,7 +54,7 @@
                                 <div class="pb-4 col-12">
                                     <label for="pdf" class="form-label">Brochure</label>
                                     @if ($about->pdf)
-                                        <p><a href="{{ asset('assets/about/' . $about->pdf) }}">Open a PDF file </a>.</p>
+                                        <p><a href="{{ asset('assets/about/' . $about->pdf) }}">Open</a>.</p>
                                     @endif
                                     <input type="file" class="form-control" id="pdf" name="pdf" />
                                 </div>

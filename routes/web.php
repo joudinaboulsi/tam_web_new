@@ -20,7 +20,7 @@ Route::post('/interest', [ContactController::class, 'getInterestForm'])->name('i
 /********  Cms Pages *********/
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 /*******  Home Sliders Page *********/
 Route::get('/cms/slider', 'HomeSliderController@index')->name('sliderCms');
@@ -80,6 +80,15 @@ Route::get('/cms/client-edit-{id}', 'ClientController@edit')->name('clientEdit')
 Route::post('/cms/client-update-{id}', 'ClientController@update')->name('clientUpdate');
 Route::delete('/cms/client-detail-delete-{id}', 'ClientController@delete')->name('clientDelete');
 /*******  client Page Ending */
+
+/*******  Testimonial  Page *********/
+Route::get('/cms/testimonial', 'TestimonialController@index')->name('testimonialCms');
+Route::get('/cms/testimonial-create', 'TestimonialController@create')->name('testimonialCreate');
+Route::post('/cms/testimonial-store', 'TestimonialController@store')->name('testimonialStore');
+Route::get('/cms/testimonial-edit-{id}', 'TestimonialController@edit')->name('testimonialEdit');
+Route::post('/cms/testimonial-update-{id}', 'TestimonialController@update')->name('testimonialUpdate');
+Route::delete('/cms/testimonial-detail-delete-{id}', 'TestimonialController@delete')->name('testimonialDelete');
+/*******  Testimonial  Page Ending */
 
 /*******  Contact  Page *********/
 Route::get('/cms/contact', 'ContactCms@index')->name('contactCms');

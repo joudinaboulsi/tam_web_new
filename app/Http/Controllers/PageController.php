@@ -22,6 +22,7 @@ use App\Service;
 use App\SeoPage;
 use SEO;
 use App\Vision;
+use App\Testimonial;
 
 class PageController extends Controller
 {
@@ -73,10 +74,12 @@ class PageController extends Controller
         $sliders = HomeSlider::all();
         $service_section = Service::where('id',1)->get();
         $vision_section = Vision::where('id',1)->get();
+        $testimonials = Testimonial::all();
+
 
 
         return view('pages.home',compact('page_data','about_section','products','product_title','client_title','clients','missions','projects',
-        'project_title','contact_section','sliders','service_section','vision_section'));
+        'project_title','contact_section','sliders','service_section','vision_section','testimonials'));
     }
 
 
